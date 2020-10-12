@@ -1,0 +1,21 @@
+  @page { 
+                size: auto;  margin: 0mm; margin-left: 20px; margin-right: 20px; margin-top: 20px;
+            }
+                @media all{
+            printed-div{
+                display:none;
+            }
+            }
+
+            @media print{
+            printed-div{
+                display:block;
+            }
+            .logo-print{
+                width:150px;
+                height:95px;
+                display: list-item;
+                list-style-image: url(logo.png);
+                list-style-position: inside;
+            }
+            }

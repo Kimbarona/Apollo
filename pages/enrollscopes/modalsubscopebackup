@@ -1,0 +1,18 @@
+<div class="modal fade bd-example-modal-sm" id="AddSubScopeModal<?php echo $row['Scope_id']?>">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+        <div id="SubScopeAlert"></div>
+            <div class="modal-header">
+                <h5 class="modal-title">Add Sub Scope</h5>
+               
+            </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="Subscope<?php echo $row['Scope_id']?>" placeholder="Enter Sub Scope"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="SaveSubScope('<?php echo $row['Scope_id']?>');">Save</button>
+                    <button type="button" class="btn btn-secondary" id="btnClose" data-dismiss="modal">Close</button>
+                </div>
+        </div>
+    </div>
+</div>
